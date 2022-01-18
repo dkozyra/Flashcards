@@ -17,7 +17,7 @@ export const quizzesSlice = createSlice({
     }
 });
 
-// Action creator that returns a thunk that dispatches two actions one after the other.
+// Thunk action creator that returns a thunk that dispatches two actions one after the other.
 export const createQuiz = (payload) => {
     return (dispatch) => {
         dispatch(addQuiz(payload));
