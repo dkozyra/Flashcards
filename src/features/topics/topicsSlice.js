@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 export const topicsSlice = createSlice({
-    name: "topics",
+    name: "cards",
     initialState: {topics: {}},
     reducers: {
       addTopic: (state, action) => {
