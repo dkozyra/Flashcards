@@ -21,12 +21,14 @@ export const quizzesSlice = createSlice({
 export const createQuiz = (payload) => {
     return (dispatch) => {
         dispatch(addQuiz(payload));
-        dispatch(addQuizId({topicId: payload.topicId, quizId: payload.quizId}));
+        dispatch(addQuizId({topicId: payload.topicId, quizId: payload.id}));
     }
 };
+
 
 export const selectQuizzes = state => state.quizzes.quizzes;
 
 export const addQuiz = quizzesSlice.actions.addQuiz;
  
 export default quizzesSlice.reducer;
+
